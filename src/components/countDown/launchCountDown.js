@@ -32,7 +32,7 @@ const LaunchCountdown = ({ hours, minutes, seconds }) => {
     const padHour = useMemo(() => {
         return String(remainTime.hours).padStart(2, '0');
     }, [remainTime.hours]);
-
+    
     return (
         <>
             <div >
@@ -97,21 +97,19 @@ const LaunchCountdown = ({ hours, minutes, seconds }) => {
                         if (e === true) {
                             if (time > 3600) {
                                 setTime(time - 3600)
-                            }
-
-
-                        }
+                            }}
                     }}
                     minuteDown={(e) => {
                         if (e === true) {
+                            if (time > 60) {
                             setTime(time - 60)
-                        }
+                        }}
                     }}
                     secondDown={(e) => {
                         if (e === true) {
-
+                            if (time > 0) {
                             setTime(time - 1)
-                        }
+                        }}
                     }}
                 />
             </div>
