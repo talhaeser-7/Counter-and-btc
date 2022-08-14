@@ -1,4 +1,4 @@
-# Counter And Bitcoin Poject
+# Counter And Bitcoin Project
 
 Counter And Bitcoin Project does mainly two things, firstly counter that counts down from 10 hours in
 which has hour, minute and second components in which the user can increment or decrement any of
