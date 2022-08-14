@@ -1,6 +1,6 @@
 # Counter And Bitcoin Poject
 
-Counter And Bitcoin Poject does mainly two things, firstly create a counter that counts down from 10 hours in
+Counter And Bitcoin Project does mainly two things, firstly create a counter that counts down from 10 hours in
 which has hour, minute and second components in which the user can increment or decrement any of
 those components by using +/- icons on the dashboard as much as necessary, secondly grab Bitcoin
 prices and also asynchronously refresh the prices in realtime, displays results in a simple web interface.
