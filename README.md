@@ -8,14 +8,17 @@ asynchronously refresh the prices in realtime, displays results in a simple web 
 ## Installation
 
 1.Clone the repo
+```
   git clone https://github.com/talhaeser-7/Counter-and-btc
-
+```
 2.install NPM packages
+```
   npm install
-
+```
 3.run project
+```
   npm run start
-
+```
 ### Built With
   -JavaScript
   -React
