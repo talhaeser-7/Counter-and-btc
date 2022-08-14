@@ -1,0 +1,82 @@
+.countdown {
+    .countdownBlockBackface {
+      position: relative;
+      width: 160px;
+      background: #191A23;
+      border-radius: 8px;
+      content: "";
+      overflow: hidden;
+  
+      perspective: 200px;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      transform: translate3d(0,0,0);
+      @media (max-width:1119px) {
+        width: 140px;
+      }
+      @media (max-width:992px) {
+        width: 200px;
+      }
+      @media (max-width:775px) {
+        width: 150px;
+      }
+      @media (max-width:600px) {
+        width: 107px;
+      }
+     
+  
+      .countdownBlock {
+        position: relative;
+        font-weight: bold;
+        font-size: 75px;
+        line-height: 155px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #FB5E84;
+        z-index: 1;
+        margin-bottom: 4px;
+        overflow: hidden;
+  
+        @media (max-width:768px) {
+         font-size: 50px;
+          line-height: 86px;
+          margin-bottom: 10px;
+          border-radius: 8px;
+        }
+  
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: calc(100% - 5px);
+          background: #343650;
+          border-radius: 4px;
+          content: "";
+          z-index: -1;
+          @media (min-width:768px) {
+            border-radius: 8px;
+          }
+         
+        }
+  
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: calc(50% - 1px);
+          background: rgba(0, 0, 0, 0.15);
+          border-radius: 4px 4px 0px 0px;
+          content: "";   
+
+          @media (min-width:768px) {
+            border-radius: 8px 8px 0px 0px;
+          }
+      }
+    }
+  
+   
+  }
+  
+}
